@@ -20,7 +20,7 @@ public class SortingMethods {
 		for (int i = 0; i < people.length - 1; i++) {
 			int iM = i;
 			for (int j = i + 1; j < people.length; j++) {
-				if (people[j].getName().compareTo(people[iM].getName()) > 0) {
+				if (people[j].getName().compareTo(people[iM].getName()) < 0) {
                     iM = j;
                 }
 			}
@@ -41,7 +41,18 @@ public class SortingMethods {
                 people[j + 1] = people[j];
                 j--;
             }
-			
+			people[j + 1] = actual;
+		}
+	}
+
+	public void sortByNameWithInsertion(Person[] people) {
+		for (int i = 1; i < people.length; i++) {
+			Person actual = people[i];
+			int j = i - 1;
+			while (j >= 0 && people[j].getName().compareTo(actual.getName()) > 0) {
+                people[j + 1] = people[j];
+                j--;
+            }
 			people[j + 1] = actual;
 		}
 	}

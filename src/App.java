@@ -1,12 +1,15 @@
+import controllers.Controller;
+import controllers.SearchMethods;
 import controllers.SortingMethods;
+import views.View;
 
 public class App {
     public static void main(String[] args) throws Exception {
-        SortingMethods s = new SortingMethods();
-        int[] arr = {5,8,2,6,4,0,11,67,2,34};
-        s.insercion(arr);
-        s.print(arr);
-        int i = s.binario(arr, 8);
-        System.out.print(arr[i]);
+        View view = new View();
+        SortingMethods sorting = new SortingMethods();
+        SearchMethods search = new SearchMethods();
+        Controller controller = new Controller(view, sorting, search);
+        controller.start();
+    
     }
 }

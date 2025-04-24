@@ -29,10 +29,16 @@ public class SearchMethods {
     }
 
     public boolean isSortedByAge(Person[] people) {
-        return false;
+        for(int i = 0; i < people.length-1; i++) {
+            if (people[i].getAge() > people[i+1].getAge()) return false;
+        }
+        return true;
     }
 
     public boolean isSortedByName(Person[] people) {
-        return false;
+        for(int i = 0; i < people.length-1; i++) {
+            if (people[i].getName().compareTo(people[i+1].getName()) > 0) return false;
+        }
+        return true;
     }
 }

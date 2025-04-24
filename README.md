@@ -1,18 +1,71 @@
-## Getting Started
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+# Práctica de Metodo de Busqueda Binaria
 
-## Folder Structure
+## 📌 Información General
 
-The workspace contains two folders by default, where:
+- **Título:** Práctica de Metodo de Busqueda Binaria
+- **Asignatura:** Estructura de Datos
+- **Carrera:** Computación
+- **Estudiante:** Andres Villalta Pardo
+- **Fecha:** 20 de abril del 2025
+- **Profesor:** Ing. Pablo Torres
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+---
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+## 🛠️ Descripción
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+Este proyecto implementa el metodo de busqueda binaria ya sea por edad o por nombre, mediante el ingreso de objetos Clase Persona con los parametros:
+- Nombre
+- Edad
 
-## Dependency Management
+El programa implementa del Metodo de Ordenamiento Burbuja, Seleccion y Insercion, dependiente del tipo de busqueda. del cual se hace uso para poder aplicar la busqueda.
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+En su funcionamiento, se toma en cuenta la generacion del arreglo Person[] desde cero. Todo con las respectivas validaciones.
+
+---
+
+## 🚀 Ejecución
+
+Para ejecutar el proyecto:
+
+1. Compila el código:
+    ```bash
+    javac App.java
+    ```
+2. Ejecuta la aplicación:
+    ```bash
+    java App
+    ```
+
+---
+
+## 🧑‍💻 Ejemplo de Entrada
+
+```plaintext
+BUSQUEDA
+1. Crear Lista Personas
+2. Ingresar Personas
+3. Ordenar Personas
+4. Buscar Persona
+5. Salir
+Seleccione una: 1
+Nro. Personas: 19
+Person[] Generado
+BUSQUEDA
+1. Crear Lista Personas
+2. Ingresar Personas
+3. Ordenar Personas
+4. Buscar Persona
+5. Salir
+Seleccione una: 2
+Person[1]
+Nombre: Andres 
+Edad: 19
+Person[2]
+Nombre: Jimmy
+Edad: 42
+
+```
+
+---
+
